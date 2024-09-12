@@ -1,0 +1,12 @@
+import cv2
+import numpy as np
+img=np.zeros((1024,1024,3))
+cv2.circle(img,(300,300),255,(255,255,0),3)
+cv2.rectangle(img,(100,200),(200,300),(255,0,255),3)
+cv2.rectangle(img,(400,200),(500,300),(255,0,255),3)
+cv2.circle(img,(300,450),50,(255,0,0),5)
+cv2.line(img,(100,180),(200,180),(255,255,255),8)
+cv2.line(img,(400,180),(500,180),(255,255,255),8)
+cv2.imshow("ankit",img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
